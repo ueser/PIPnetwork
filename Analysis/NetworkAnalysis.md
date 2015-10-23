@@ -39,7 +39,7 @@ ggpairs(prots)
 
 ![plot of chunk Pairwise correlation matrix](figure/Pairwise correlation matrix.png) 
 
-This is actually what we don't want. This plot tells us that all these events share a common determinant, i.e. the polymerase itself, which we already know.If we were to compare these isoform interactors with the rest of the whole cell, then the data with its current form would be sufficient and informative. However, we would like to compare across the isoform interactors and try to resolve the differences. Hence, we should rescale the data so that each row will represent a specific protein's interaction weights with the phospho isoforms. For example, protein X can have high reads in each isoform just because that its abundance in the nucleus. Once we calculate the weights by dividing the total reads, we will find out the interaction strength with phosphoisoforms relative to eachother.  
+This is actually what we don't want. This plot tells us that all these events share a common determinant, i.e. the polymerase itself, which we already know.If we were to compare these isoform interactors with the rest of the whole cell, then the data with its current form would be sufficient and informative. However, we would like to compare across the isoform interactors and try to resolve the differences. Hence, we should rescale the data so that each row will represent a specific protein's interaction weights with the phospho isoforms. For example, protein X can have high reads in each isoform just because of its abundance in the nucleus. Once we calculate the weights by dividing the total reads, we will find out the interaction strength with phosphoisoforms relative to each other.  
 
 Let's see what happens if we normalize the data:
 
